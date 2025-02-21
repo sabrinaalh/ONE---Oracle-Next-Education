@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+:root{
+    --cor-principal:rgb(10, 10, 10);
+    --cor-secundaria: whitesmoke;
+    --cor-tercearia: #22D4FD;
+    --cor-destaque: orange;
+    --fonte_principal: "Montserrat", serif;
+    --fonte-titulo: "Krona One", serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:var(--cor-principal);
+    max-width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+#cabecalho{
+    display: flex;
+    justify-content: center;
+    gap:24px;
+    width: 88vw;
+    padding:3% 0 3% 0;
+}
+
+#cabecalho a{
+    color: var(--cor-tercearia);
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+    font-family: var(--fonte_principal);
+}
+
+#cabecalho a:hover{
+    color: var(--cor-destaque);
+}
+
+
+#flex-container{
+    display: flex; 
+    flex-direction: row;
+    gap: 3px;
+    height: 88vh;
+    width: 88vw;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h1{
+    font-family: var(--fonte-titulo);
+    font-size: 1.5rem;
+    margin: 0;
+}
+h1 >  strong{
+    color:  var(--cor-tercearia);
+    }
+    
+h1,h2, p, a,footer{
+    color:var(--cor-secundaria);
+    text-align: justify;
+}
+p, .botoes,footer{
+    margin-top: 15px;
+   font-family: var(--fonte_principal);
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.botoes{
+border:2px, var(--cor-secundaria), solid;
+display: flex;
+justify-content:center;
+align-items: center;
+width: 216px;
+height: 22px;
+margin: 10px;
+padding:5px;
+text-decoration: none;
+border-radius: 5px;
+font-weight: 600;
+gap:16px;
+
+}
+
+.botoes:hover{
+    background-color: var(--cor-destaque);
+}
+
+
+
+#flex-content{
+    max-width: 395px;
+    min-width: 158px;
+    margin: 15px;  
+}
+
+
+ img{
+    border:3px,var(--cor-destaque),solid;
+    padding: 5px;
+    max-width: 209px;
+    height: 260px;
+
+}
+
+
+#previous{
+    width: 170px;
+    height: 170px;
+    border:3px, var(--cor-tercearia),solid;
+    margin-top: 25px;
+}
+
+#rodape{
+    font-weight: 600;
+    padding: 2% 0 2% 0;
+    width: 100%;
+    background-color: var(--cor-tercearia);
+    margin: 0;
+
+}
+#rodape p{
+    text-align: center;
+    margin:0;
+}
+
